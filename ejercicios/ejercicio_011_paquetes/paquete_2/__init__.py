@@ -1,0 +1,1 @@
+# El __init__ puede estar vacío
