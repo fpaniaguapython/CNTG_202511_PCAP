@@ -21,6 +21,6 @@ print(nombres) # ['image001', 'image002', 'image003']
 nombres = [(fichero[:fichero.lower().find('.jpg')]) for fichero in ficheros if (fichero.lower().find('.jpg')!=-1)]
 print(nombres)
 
-# Opción Damián
+# Opción Damián (con compresión de listas)
 nombres = [f[:-4] for f in ficheros if f.lower().endswith(('.jpg'))]
 print(nombres)

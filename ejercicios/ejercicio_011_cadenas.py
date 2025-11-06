@@ -39,3 +39,15 @@ print(cadena[0:-1]) # Me gusta programar en Pytho
 print(cadena[0:-2]) # Me gusta programar en Pyth
 print(cadena[0:-100]) # VACÍO
 
+# Algunos métodos
+
+# find
+entrada = '2025#11#06#XUNTA#PYTHON'
+print(entrada.find('#')) # 4
+print(entrada.find('#',5)) # 7
+print(entrada.find('*')) # -1
+
+print('*' in entrada) # False --> RECOMENDADO PARA SABER SI EXISTE O NO UNA SUBCADENA
+
+
+
