@@ -4,5 +4,5 @@ try:
     c = a/b
 except ZeroDivisionError as zde:
     pass
-except ZeroDivisionError as zde:
+except ArithmeticError as ae:
     pass
