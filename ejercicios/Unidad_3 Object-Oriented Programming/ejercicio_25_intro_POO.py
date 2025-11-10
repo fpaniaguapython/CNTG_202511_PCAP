@@ -48,6 +48,9 @@ class Automovil:
     def parar(self):
         print(f'Soy {self.matricula} y acabo de parar el motor')
 
+    def __del__(self):
+        print(f'Soy {self.matricula} y este es mi método "destructor"')
+
 seat_panda = Automovil('7748-KRS', 'Seat', 'Panda', 'Gris', 'Gasolina')
 seat_panda.arrancar(3)
 seat_panda.parar()
@@ -56,5 +59,6 @@ seat_panda.parar()
 # El método mágico __init__ inicializa el objeto (constructor). 
 
 # ¿Destructor?
+# El método mágico __del__ se ejecuta cuando el objeto se 'destruye'
 
-# Herencia
+
