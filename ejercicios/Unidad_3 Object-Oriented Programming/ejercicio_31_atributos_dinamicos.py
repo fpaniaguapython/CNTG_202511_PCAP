@@ -17,3 +17,12 @@ print(alien.__dict__) # {'titulo': 'Alien', 'director': 'Ridley', 'anyo': 1988}
 el_resplandor.directo = 'John Rambo'
 # PROBLEMÓN --> El error tipográfico ha creado un nuevo atributo que no era lo que queríamos hacer
 print(el_resplandor.__dict__) # {'titulo': 'El Resplandor', 'director': 'Kubrick', 'directo': 'John Rambo'}
+
+# Eliminar un atributo con el operador del
+del  el_resplandor.directo
+print(el_resplandor.__dict__) # {'titulo': 'El Resplandor', 'director': 'Kubrick'}
+
+# Eliminar un objeto de memoria con el operador del
+print(dir()) # ['Pelicula', ..., 'alien', 'el_resplandor']
+del el_resplandor
+print(dir()) # ['Pelicula', ..., 'alien']

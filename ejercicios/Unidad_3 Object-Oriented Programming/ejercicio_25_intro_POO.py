@@ -55,6 +55,7 @@ seat_panda = Automovil('7748-KRS', 'Seat', 'Panda', 'Gris', 'Gasolina')
 seat_panda.arrancar(3)
 seat_panda.parar()
 
+
 # ¿Constructor?
 # El método mágico __init__ inicializa el objeto (constructor). 
 

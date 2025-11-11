@@ -61,16 +61,16 @@ class Gato(Mamifero):
         print(f'Soy {self.nombre} y estoy maullando como Gato')
 
 scooby_doo = Perro('Scooby Doo', 180, 'Dogo')
-scooby_doo.ladrar()
-scooby_doo.comer()
-scooby_doo.amamantarse()
-scooby_doo.reproducirse()
+scooby_doo.ladrar() # Soy Scooby Doo y estoy ladrando como Perro
+scooby_doo.comer() # Soy Scooby Doo y estoy comiendo como Animal # Soy Scooby Doo y estoy comiendo como Perro
+scooby_doo.amamantarse() # Soy Scooby Doo y estoy amamantándome como Mamifero
+scooby_doo.reproducirse() # Soy Scooby Doo y me estoy reproduciendo como Animal
 
 garfield = Gato('Garfield', 120, True)
-garfield.maullar()
-garfield.comer()
-garfield.amamantarse()
-garfield.reproducirse()
+garfield.maullar() # Soy Garfield y estoy maullando como Gato
+garfield.comer() # Soy Garfield y estoy comiendo como Animal
+garfield.amamantarse() # Soy Garfield y estoy amamantándome como Mamifero
+garfield.reproducirse() # Soy Garfield y me estoy reproduciendo como Animal
 
 print(isinstance(garfield, Gato)) # True
 print(isinstance(garfield, Perro)) # False
