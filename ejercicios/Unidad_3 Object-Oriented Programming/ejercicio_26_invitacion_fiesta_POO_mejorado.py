@@ -39,7 +39,7 @@ class Invitacion:
 
     def get_pdf(self) -> bytes:
         print('Generando pdf...')
-        width, height = 85 * mm, 55 * mm
+        width, height = 85 * mm, 55 * mm # Declaración de dos variables con asignación
         nombre_fichero = f'{self.invitado.nombre.lower().replace(' ','_')}.pdf'
         canvas = Canvas(nombre_fichero, pagesize=(width, height))
         canvas.setFont('Courier', 18)
@@ -64,23 +64,24 @@ class CorreoElectronicoManager:
         # Enviar por correo la invitación al invitado
         print(f'Enviando invitación a {invitado.email}')
 
-fiesta_jaloguin = Evento(
-    nombre='Fiesta de Jaloguin', 
-    direccion='La Tita. Rúa Nova, 46, Santiago de Compostela', 
-    fecha='31/10/2026', 
-    hora='23:59', 
-    logotipo='calabaza.png')
+if __name__=='__main__':
+    fiesta_jaloguin = Evento(
+        nombre='Fiesta de Jaloguin', 
+        direccion='La Tita. Rúa Nova, 46, Santiago de Compostela', 
+        fecha='31/10/2026', 
+        hora='23:59', 
+        logotipo='calabaza.png')
 
-invitado_1 = Invitado('Susana López', 'susana@gmail.com', '630881100')
-invitado_2 = Invitado('Óscar Martínez', 'oscar@gmail.com', '630881100')
-invitado_3 = Invitado('Felipe Mayor', 'felipe@gmail.com', '630881100')
+    invitado_1 = Invitado('Susana Pol', 'susana@gmail.com', '630881100')
+    invitado_2 = Invitado('Óscar Ortiz', 'oscar@gmail.com', '630881100')
+    invitado_3 = Invitado('Felipe Rabadán', 'felipe@gmail.com', '630881100')
 
-invitacion_1 = Invitacion(evento=fiesta_jaloguin, invitado=invitado_1)
-invitacion_2 = Invitacion(evento=fiesta_jaloguin, invitado=invitado_2)
-invitacion_3 = Invitacion(evento=fiesta_jaloguin, invitado=invitado_3)
+    invitacion_1 = Invitacion(evento=fiesta_jaloguin, invitado=invitado_1)
+    invitacion_2 = Invitacion(evento=fiesta_jaloguin, invitado=invitado_2)
+    invitacion_3 = Invitacion(evento=fiesta_jaloguin, invitado=invitado_3)
 
-invitaciones = [invitacion_1, invitacion_2, invitacion_3]
+    invitaciones = [invitacion_1, invitacion_2, invitacion_3]
 
-for invitacion in invitaciones:
-    pdf_invitacion = invitacion.get_pdf()
-    CorreoElectronicoManager.enviar_invitacion(invitado=invitacion.invitado, pdf_invitacion=pdf_invitacion)
+    for invitacion in invitaciones:
+        pdf_invitacion = invitacion.get_pdf()
+        CorreoElectronicoManager.enviar_invitacion(invitado=invitacion.invitado, pdf_invitacion=pdf_invitacion)
