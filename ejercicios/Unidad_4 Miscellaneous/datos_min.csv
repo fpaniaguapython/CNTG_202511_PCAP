@@ -1,0 +1,5 @@
+product.partNumber,location.locationIdentifier,inventoryType,quantity,quantityUnits,value,valueCurrency,reservationOrders,daysOfSupply,shelfLife,reorderLevel,expectedLeadTime,quantityUpperThreshold,quantityLowerThreshold,daysOfSupplyUpperThreshold,daysOfSupplyLowerThreshold,expiringThreshold,plannerCode,velocityCode,inventoryParentType,class,segment
+PS-SL-A287,LT-1,PRODUCT,25,EA,31250.00,USD,2,19,365,50,30,100,10,30,10,,Street Lighting,B,ONHAND,NEW,INDUSTRIAL
+PS-SL-A288,LT-1,PRODUCT,20,EA,25000.00,USD,2,35,365,50,30,100,10,30,10,,Street Lighting,B,ONHAND,NEW,INDUSTRIAL
+9664146,LT-2,ITEM,259,EA,267288.00,USD,0,42,365,200,30,400,100,30,10,,Secondary Chassis, A ,ONHAND,NEW,
+9664147,LT-2,ITEM,27,EA,26352.00,USD,0,56,365,200,30,400,100,30,10,,Secondary Chassis, A ,ONHAND,NEW,
